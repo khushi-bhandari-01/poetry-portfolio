@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khushi | Poetry Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Khushi</h1>
+    <p>Poet | Creative Writer | Tech Student</p>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="card">
+    <h2>About Me</h2>
+    <p>
+      I am a B.Tech IT student with a passion for poetry and creative expression.
+      I enjoy performing poetry and participating in literary events.
+    </p>
+  </section>
+
+  <!-- POEMS SECTION -->
+  <section class="card">
+    <h2>Poems</h2>
+
+    <!-- Buttons -->
+    <div class="poem-buttons">
+      <button onclick="showEnglish()">English</button>
+      <button onclick="showHindi()">Hindi</button>
+    </div>
+
+    <!-- English Poems -->
+    <div id="english-poems" class="poem-section hidden">
+      <h3>English Poems</h3>
+
+      <div class="poem">
+        <h4>Letting Go</h4>
+        <p>
+        In the silence of my heart I see,<br>
+        some loves are not forever meant to be.<br>
+        They touch our hearts, then drift away,<br>
+        yet in the soul, they always stay.<br><br>
+
+        I held you close in dreams, not hands,<br>
+        like water slipping through the sands.<br>
+        I wished to keep you, never part,<br>
+        but love can’t live inside a cage or heart.<br><br>
+
+        I let you go though tears were mine,<br>
+        for love’s true gift is not a bind.<br>
+        To hold too tight would dim its glow,<br>
+        so I chose the hardest way—let go.<br><br>
+
+        I closed our book with gentle care,<br>
+        its story short but true and rare.<br>
+        Not love itself that left me torn,<br>
+        but dreams that died before they’re born.
+        </p>
+    </div>
+
+
+      <div class="poem">
+        <h4>For more poems stay tuned</h4>
+        <p>
+          we are working on it<br>
+        </p>
+      </div>
+    </div>
+
+    <!-- Hindi Poems -->
+    <div id="hindi-poems" class="poem-section hidden">
+      <h3>Hindi Poems</h3>
+      
+      <div class="poem">
+        <h4>खामोशी की स्याही</h4>
+        <p>
+        ज़िंदगी के हर मोड़ पर,<br>
+        खामोशियों से बातें की,<br>
+        दर्द था पर कभी उसे जुबां ना दी।<br>
+        कहने की चाह तो थी,<br>
+        पर अल्फ़ाज़ मिल ना सके,<br>
+        ख्वाबों को सहेजा,<br>
+        पर पन्नों पर उतार ना सके।<br><br>
+
+        कहते हैं लिखना दिल का सुकून होता है,<br>
+        पर मेरे दिल की स्याही में शायद वो जूनून नहीं।<br>
+        रचने वाले रूह को आराम देते हैं,<br>
+        और मैं अपनी रूह को खामोशी से मारती रही।<br><br>
+
+        था एक, जो सुन लेता था हर बात मेरी,<br>
+        जो बसा था दिल के हर कोने में।<br>
+        आज जब वो नहीं,<br>
+        तो लिखने का हुनर भी खो गया,<br>
+        दर्द तो है,<br>
+        पर उसे कहने का सलीका सो गया।
+        </p>
+    </div>
+
+
+      <div class="poem">
+        <h4>कविता</h4>
+        <p>
+          शब्दों की गहराई में जाने के लिए हमारे साथ <br>
+          आगे बने रहें|
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="card">
+    <h2>Achievements</h2>
+    <p>
+      Special Mention – Inter-College Open Mic Poetry Competition,
+      organized by Aagaaz, The Poetry Society of NSUT.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="card">
+    <h2>Contact</h2>
+    <p>Email: khushisinghbhandari@gmail.com</p>
+  </section>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function showEnglish() {
+      document.getElementById("english-poems").classList.remove("hidden");
+      document.getElementById("hindi-poems").classList.add("hidden");
+    }
+
+    function showHindi() {
+      document.getElementById("hindi-poems").classList.remove("hidden");
+      document.getElementById("english-poems").classList.add("hidden");
+    }
+  </script>
+
+</body>
+</html>
